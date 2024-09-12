@@ -1,16 +1,16 @@
 pragma solidity ^0.4.2;
 
-import "./DappToken.sol";
+import "./DaapCoin.sol";
 
-contract DappTokenSale {
+contract DaapCoinSale {
     address admin;
-    DappToken public tokenContract;
+    DaapCoin public tokenContract;
     uint256 public tokenPrice;
     uint256 public tokensSold;
 
     event Sell(address _buyer, uint256 _amount);
 
-    function DappTokenSale(DappToken _tokenContract, uint256 _tokenPrice) public {
+    function DaapCoinSale(DaapCoin _tokenContract, uint256 _tokenPrice) public {
         admin = msg.sender;
         tokenContract = _tokenContract;
         tokenPrice = _tokenPrice;
