@@ -7,11 +7,15 @@
     "test": "test"
   },
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "test": "jest --verbose ./test"
   },
   "author": "Gregory",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
   }
 }
